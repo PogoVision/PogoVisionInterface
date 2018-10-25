@@ -16,7 +16,7 @@ class AppHeader extends Component {
     };
 
     render() {
-        const { classes, drawerState } = this.props;
+        const { classes } = this.props;
 
         return (
             <AppBar
