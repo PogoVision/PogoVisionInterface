@@ -1,3 +1,5 @@
+import sprite from './img/icons-im-1-bigger.png';
+
 const drawerWidth = 240;
 
 const AppStyle = theme => ({
@@ -30,6 +32,13 @@ const AppStyle = theme => ({
     },
     nested: {
         paddingLeft: theme.spacing.unit * 4,
+    },
+    pokemon: {
+        backgroundImage: `url(${sprite})`,
+        backgroundRepeat: 'no-repeat',
+        height: 80,
+        width: 80,
+        zoom: 0.5,
     },
     root: {
         flexGrow: 1,
