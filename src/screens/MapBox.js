@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
-
 import ReactMapGL, { NavigationControl } from 'react-map-gl';
 
 import AppStyle from '../AppStyle';
+import Pokemon from '../components/Pokemon';
 
 const MAPTILER_STYLE = 'https://maps.tilehosting.com/styles/streets/style.json?key=wvrABD6khhu7CNLtQ2mo';
 
@@ -43,6 +43,7 @@ class MapBox extends Component {
                         showCompass={false}
                     />
                 </div>
+                <Pokemon latitude="-23.568095" longitude="-46.64466" />
             </ReactMapGL>
         );
     }
